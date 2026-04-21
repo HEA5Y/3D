@@ -1,0 +1,33 @@
+## --- РАЗРЕШЕННЫЕ ФАЙЛЫ (Файлы запуска) ---
+!*.sln
+!*.slnx
+!*.vcxproj
+!*.vcxproj.filters
+
+## --- ИГНОРИРУЕМЫЕ ФАЙЛЫ (Мусор) ---
+
+# Пользовательские настройки (размеры окон и т.д.)
+.vs/
+*.suo
+*.user
+*.sln.docstates
+
+# Папки сборки и временные файлы
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+*.obj
+*.ilk
+*.pch
+*.pdb
+*.tlog
+*.lastbuildstate
+*.idb
+*.recipe
+*.VC.db
+*.opendb
+*.sdf
+ipch/
+*.log
+*.tmp
