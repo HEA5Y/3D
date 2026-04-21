@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="3d_serega_lox/3d_serega_lox.vcxproj" Id="537aab80-1f65-4957-a72d-fcb0aab0f312" />
+</Solution>
