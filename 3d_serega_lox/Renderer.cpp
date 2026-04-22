@@ -7,12 +7,13 @@ void Renderer::render(Map& map, Player& player)
 	std::string frame = ""; // кадр
 
 	for (int y = 0; y < screenHeight; y++) {
-		if (y < map.Height) {
+
+		if (y < map.Height) { //подгрузка миникарты в кадр(добавка к стрингу кадра)
 			for (int x = 0; x < map.Weight; x++) {
 				frame += map.map[y][x];
 			}
 		}
-		else {
+		else {                //
 			frame += std::string(map.Weight, ' ');
 		}
 
@@ -52,7 +53,7 @@ void Renderer::render(Map& map, Player& player)
 				frame += " ";
 			}
 			else if (y >= ceiling && y <= floorr) {
-				/*if (tx < 0.005 || tx > 0.995 || ty < 0.005 || ty > 0.995) { //  не очень красиво и минус фпс
+				/*if (tx < 0.005 || tx > 0.995 || ty < 0.005 || ty > 0.995) { //  не очень красиво и минус фпс (ртикальные полосочки)
 					frame += "|";
 				}
 				else */if (distance <= 4.0f)      frame += "█";
