@@ -1,7 +1,9 @@
 #include "Renderer.h"
 #include <cmath>
+
 void Renderer::render(Map& map, Player& player)
 {
+
 	map.GoToTop(0, 0);
 	std::string mapStr = map.Draw();
 	std::string frame = ""; // кадр
